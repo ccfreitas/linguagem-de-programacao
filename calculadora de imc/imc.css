@@ -9,7 +9,7 @@ body
     }
 section
     {
-        border-radius: 20px;
+        border-radius: 20px; 
         background-color: blue;
         padding: 20px; /*espaçamento interno a direita esquerda acima abaixo*/
         margin: auto;

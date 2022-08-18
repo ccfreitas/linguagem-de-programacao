@@ -10,3 +10,4 @@ function calcular()
         //alert(`O valor do imc é de ${imc.toFixed(2)}`)  //a crase ao contrario é uma template string para juntar valores
         document.getElementById("imc").innerHTML = `O valor do imc é de ${imc.toFixed(2)}`
     }
+    
