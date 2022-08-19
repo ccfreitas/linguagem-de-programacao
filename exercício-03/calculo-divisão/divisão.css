@@ -1,0 +1,20 @@
+div
+{
+    margin-bottom: 20px;
+}
+body
+{
+    background-color: aqua;
+}
+section
+{
+    background-color: blue;
+    border-radius: 20px;
+    padding: 20px;
+    margin: auto;
+    width: 300px;
+}
+p
+{
+    color: azure;
+}
