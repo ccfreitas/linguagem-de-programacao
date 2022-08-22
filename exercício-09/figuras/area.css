@@ -1,0 +1,26 @@
+section
+{
+    border-radius: 20px; 
+    background-color: blue;
+    padding: 20px; /*espaçamento interno a direita esquerda acima abaixo*/
+    margin: 20px;
+    margin-top: 60px;
+    width: 200px;
+}
+h3
+{
+    color: azure;
+}
+figcaption
+{
+    color: azure;
+}
+section
+{
+    border-radius: 20px; 
+    background-color: blue;
+    padding: 20px; /*espaçamento interno a direita esquerda acima abaixo*/
+    margin: auto;
+    margin-top: 60px;
+    width: 200px;
+}
