@@ -15,18 +15,18 @@ function calcular()
         {
             classificação = "Normal"
         }
-            else if(imc >= 25 && imc < 30 )
-            {
-                classificação = "Sobrepeso"
-            }
-            else if(imc >= 30 && imc <= 40)
-            {
-                classificação = "Obesidade"
-            }
-            else 
-            {
-                classificação = "Obesidade grave"
-            }
+        else if(imc >= 25 && imc < 30 )
+        {
+            classificação = "Sobrepeso"
+        }
+        else if(imc >= 30 && imc <= 40)
+        {
+            classificação = "Obesidade"
+        }
+        else 
+        {
+            classificação = "Obesidade grave"
+        }
         
         document.getElementById("classificação").innerHTML = `A classificação do imc é de ${classificação}`
     }
