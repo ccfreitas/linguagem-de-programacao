@@ -1,0 +1,23 @@
+div
+    {
+        margin-bottom: 20px;
+    }
+body
+    {
+        background-color: rgb(221, 240, 240);
+        
+    }
+section
+    {
+        border-radius: 20px; 
+        background-color: rgb(85, 85, 255);
+        padding: 20px; /*espaçamento interno a direita esquerda acima abaixo*/
+        margin: auto;
+        margin-top: 60px;
+        width: 300px;
+    }
+    /*mudar a cor do paragrafo*/
+    p
+    {
+        color: oldlace;
+    }
