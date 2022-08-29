@@ -4,7 +4,7 @@ function calcular()
     let n2 = Number(document.getElementById("n2").value)
     let valor = 0
 
-    let operador = operações.value;
+    let operador = operações.value
     if (operador == "media")
         {
             valor = (n1 + n2) / 2
