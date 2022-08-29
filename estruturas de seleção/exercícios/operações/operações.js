@@ -4,12 +4,12 @@ function calcular()
     let n2 = Number(document.getElementById("n2").value)
     let valor = 0
 
-    let operador = operações.value
-    if (operador == "media")
+    let escolha
+    if (escolha == "media")
         {
             valor = (n1 + n2) / 2
         }
-    if (operador == "subtração")
+    else if (escolha == "subtração")
         {
            if(n1 > n2)
            {
@@ -20,15 +20,16 @@ function calcular()
                 valor = n2 - n1
            }
         }
-    if (operador == "multiplicação")
+    else if (escolha == "multiplicação")
         {
             valor = n1 * n2
         }
-    if (operador == "divisão")
+    else (escolha == "divisão")
         {
+            if (n2 != 0)
             valor = n1 / n2
         }
 
-    document.getElementById("operações").innerHTML = `A ${operador} é = ${valor}`
+    document.getElementById("operador").innerHTML = `A ${escolha} é = ${valor}`
 
 }
