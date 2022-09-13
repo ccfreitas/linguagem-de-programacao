@@ -8,34 +8,38 @@ function calcular()
     let f5 = 0
     for (let i = 0; i < 8; i++)
     {
-        idade = Number(prompt(`Informe a idade ${i+1}`))
-    }
-    if (idade >= 0 && idade <= 15)
-    {
-        f1++
-    }
-    else if (idade > 15 && idade <=30)
-    {
-        f2++
-    }
-    else if (idade > 30 && idade <= 45)
-    {
-        f3++
-    }
-    else if (idade > 45 && idade <= 60)
-    {
-        f4++
-    }
-    else if (idade > 60)
-    {
-        f5++
-    }
-    else
-    {
-        //console.log(`Valor negativo, tente novamente`)
-        //i--
-        alert(`Valor negativo, tente novamente`)
-        i-- //desconsidera o valor negativo
+        idade = Number(prompt(`Informe a idade ${i}`))
+    
+        if (idade >= 0 && idade <= 15)
+        {
+            f1++
+        }
+        else if (idade > 15 && idade <=30)
+        {
+            f2++
+        }
+        else if (idade > 30 && idade <= 45)
+        {
+            f3++
+        }
+        else if (idade > 45 && idade <= 60)
+        {
+            f4++
+        }
+        else if (idade > 60)
+        {
+            f5++
+        }
+        else
+        {
+            console.log(`Valor negativo, tente novamente`)
+            //i--
+            alert(`Valor negativo, tente novamente`)
+            i-- //desconsidera o valor negativo
 
+        }
+    
     }
-}
+    // verificou toda a entrada
+    document.getElementById("idade").innerHTML = `Faixa 1: ${f1} Faixa 2: ${f2} Faixa 3: ${f3} Faixa 4: ${f4} Faixa 5: ${f5} % Faixa 1: ${f1/8*100} Faixa 5: ${f5/8*100}`
+}   
