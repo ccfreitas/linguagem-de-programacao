@@ -1,0 +1,48 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="apartamento.css">
+    <script src="apartamento.js"></script>
+    <title>Apartamento</title>
+</head>
+<body>
+    <section>
+        <h3>Apartamento</h3>
+        <div>
+        Informe a metragem do apartamento <input type="number" id="metro"/>
+        </div>
+        <div>
+            Quantas garagens  
+            <select id="garagem">
+                <option value="1"> 1 </option>
+                <option value="2"> 2 </option>
+                <option value="3"> 3 </option>
+            </select>
+        </div>
+        <div>
+            Quantos andares  
+            <select id="andar">
+                <option value="1"> 1 </option>
+                <option value="2"> 2 </option>
+                <option value="3"> 3 </option>
+            </select>
+        <div>
+            <div>
+                Posição do sol  
+                <select id="sol">
+                    <option value="M"> Manhã </option>
+                    <option value="T"> Tarde </option>
+                </select>
+            <div>
+            <button type="button" onclick="calcular()">Calcular</button>
+        </div>
+        <div>
+            <p id="resultado"/>
+        </div>
+    </section>
+    
+</body>
+</html>
