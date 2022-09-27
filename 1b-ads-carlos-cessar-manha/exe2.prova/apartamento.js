@@ -73,10 +73,6 @@ function calcular()
     }
     
 
-    document.getElementById("resultado").innerHTML = `O valor final do apartamento é R$ ${valorf.toFixed(2)}`
+    document.getElementById("resultado").innerHTML = `O valor final do apartamento é: ${valorf.toLocaleString('pt-BR', {style:'currency', currency:'BRL'})}`
 
-
-    
-
-    
 }
