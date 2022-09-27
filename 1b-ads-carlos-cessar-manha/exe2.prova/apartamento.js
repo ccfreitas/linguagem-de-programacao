@@ -6,7 +6,7 @@ function calcular()
     let sol = document.getElementById("sol").value
 
     let valorf
-    if (metro <= 80)
+    if (metro > 0 && metro <= 80)
     {
         if (garagem == 1)
         {
@@ -21,7 +21,7 @@ function calcular()
             valorf = 340000
         }
     }
-    if (metro > 80 && metro <= 120)
+    else if (metro > 80 && metro <= 120)
     {
         if (garagem == 1)
         {
@@ -36,7 +36,7 @@ function calcular()
             valorf = 440000
         }
     }    
-    if (metro > 120)
+    else if (metro > 120)
     {
         if (garagem == 1)
         {
@@ -50,6 +50,10 @@ function calcular()
         {
             valorf = 540000
         }
+    }
+    else
+    {
+        alert('Ops!!!, necessario escolher um valor maior que zero')
     }
     if (andar == 1)
     {
